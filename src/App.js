@@ -25,7 +25,7 @@ function App() {
                 <Route exact path="/crypto/:coinid">
                   <CryptoDetails />
                 </Route>
-                <Route exact path="/crypto/news">
+                <Route exact path="/news">
                   <News />
                 </Route>
               </Switch>
