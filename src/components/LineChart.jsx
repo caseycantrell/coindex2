@@ -1,6 +1,6 @@
 import { Line } from 'react-chartjs-2';
 import { Col, Row, Typography } from 'antd';
-import { Chart as ChartJS } from 'chart.js/auto'
+import { Chart } from 'chart.js/auto'
 const { Title } = Typography;
 
 const LineChart = ({ coinHistory, currentPrice, coinName }) => {
@@ -29,17 +29,6 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
     ],
   };
 
-  const options = {
-    scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: true,
-          },
-        },
-      ],
-    },
-  };
   return (
     <>
     <Row className="chart-header">
@@ -49,7 +38,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
         <Title level={5} className="current-price">Current {coinName} Price: $ {currentPrice}</Title>
       </Col>
     </Row>
-    <Line data={data} options={options} />
+    <Line data={data} />
   </>
   );
 };

@@ -1,7 +1,8 @@
 import { Switch, Route, Link } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
-import { Navbar, Exchanges, Homepage, Cryptocurrencies, CryptoDetails, News } from "./components";
+import { Navbar, Homepage, Cryptocurrencies, CryptoDetails, News } from "./components";
 import "./App.css"
+const { Title } = Typography;
 
 function App() {
   return (
@@ -16,9 +17,6 @@ function App() {
                 <Route exact path="/">
                   <Homepage />
                 </Route>
-                <Route exact path="/exchanges">
-                  <Exchanges />
-                </Route>
                 <Route exact path="/cryptocurrencies">
                   <Cryptocurrencies />
                 </Route>
@@ -32,13 +30,12 @@ function App() {
             </div>
           </Layout>
         <div className="footer">
-          <Typography.Title level={5} style={{ color: "white", textAlign: "center" }}>
+          <Title level={5} style={{ color: "white", textAlign: "center" }}>
             COINdex <br />
             All rights reserved
-          </Typography.Title>
+          </Title>
           <Space>
             <Link to="/">Home</Link>
-            <Link to="/exchanges">Exchanges</Link>
             <Link to="/news">News</Link>
           </Space>
           </div>
