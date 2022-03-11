@@ -12,18 +12,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #000;
 }
+
 a {
     color: var(--greenish) !important; 
 }
+
 a:hover{
     color: var(--light-blue) !important;
 }
+
 .ant-menu-item-selected {
     background-color: #000 !important;
   }
+
 .app{
     display: flex;
     overflow: hidden;
@@ -33,6 +38,7 @@ a:hover{
     flex: 0.2;
     background-color: #000;
 }
+
 .main{
     flex: 0.8;
     width: 100%;
@@ -52,9 +58,11 @@ a:hover{
     width: 240px;
     background-color:#000;
 }
+
 .nav-container a {
     color:#fff !important;
 }
+
 .logo-container{
     display: flex;
     justify-content: center;
