@@ -1,9 +1,8 @@
-
 :root{
     --text-primary:#000;
-    --bgPrimary:#fff;
-   --bgSecondary: #F9F9F9;
-   --pink: #0071bd;
+    --bgPrimary:#000;
+   --bgSecondary: #00e4c5;
+   --greenish: #00e4c5;
    --light-blue: #e6f7ff;
    --border: #d9d9d9;
 }
@@ -13,9 +12,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a {
+    color: #fff !important;
+}
 a:hover{
-    color: var(--pink) !important;
+    color: var(--greenish) !important;
 }
 
 .app{
@@ -25,47 +26,48 @@ a:hover{
 
 .navbar{
     flex: 0.2;
-    background-color: rgb(0, 21, 41);
+    background-color: #000;
 }
 
 .main{
     flex: 0.8;
     width: 100%;
-    
 }
+
 .routes{
     padding: 20px;
 }
+
 .nav-container{
     position: fixed;
-    left: 0;
-    margin: 10px;
-    height: 100vh;
+    left: 0px;
     margin: 0px;
-    background-color: rgb(0, 21, 41);
+    height: 100vh;
+    width: 240px;
+    background-color:#000;
 }
 
 .logo-container{
-    background-color: #001529;
     display: flex;
+    background-color: #000;
     padding: 20px;
     align-items: center;
     width: 100%;
 }
-.logo{
-    margin:0 0 0 15px;
-}
+
 .logo a{
    color: white;
 }
+
 .menu-control-container{
     display: none !important;
     position: absolute !important;
-    right: 10px !important;
-    top: 25px !important;
-    font-size: 1.2rem !important;
+    right: 20px !important;
+    top: 30px !important;
+    font-size: 1.2rem;
     background-color: var(--bgSecondary) !important;
-    border: none !important;
+    border: none;
+    padding-left: 20px;
 }
 
 .loader{
@@ -115,7 +117,6 @@ a:hover{
         position:fixed;
         width: 100%;
         z-index: 100;
-        background-color: var(--bgSecondary);
     }
   
     .menu-control-container{
@@ -151,7 +152,7 @@ a:hover{
 
 .coin-heading-container .coin-name{
     font-weight: 900;
-    color: var(--pink);
+    color: var(--greenish);
 }
 
 .coin-heading-container p{
@@ -171,13 +172,13 @@ a:hover{
     font-weight: 700;
     font-size: 1.4rem;
     margin-top: 20px;
-    color: var(--pink);
+    color: var(--greenish);
 }
 
 .coin-details-heading{
     font-weight: 700 !important;
     margin-top: 20px !important;
-    color: var(--pink) !important;
+    color: #000;
 }
 
 .coin-stats{
@@ -187,7 +188,6 @@ a:hover{
     font-size: 1rem;
     opacity: 0.9;
     padding: 20px;
-
 }
 
 .coin-stats-name{
@@ -214,20 +214,21 @@ a:hover{
 
 .coin-desc-link h2{
     font-weight: 700;
-    color: var(--pink);
+    color: red;
 }
 
 .coin-desc-link p{
     font-size: 1rem;
-    opacity: 0.9;
+    color: #888888;
 }
 
 .coin-desc-link a{
-    color: var(--pink);
+    color: blue;
 }
 
 .coin-desc-link h3{
     font-weight: 700;
+    color: white;
 }
 
 .coin-desc{
@@ -291,29 +292,35 @@ a:hover{
 .select-news{
     width: 180px;
 }
+
 .news-card{
     min-height: 300px !important;
 }
+
 .news-image-container{
     display: flex !important;
     justify-content: space-between !important;
 }
+
 .news-title{
-width: 70%;
+    width: 70%;
 }
 
 .news-image-container .img{
     width:100px;
     height:100px;
 }
+
 .news-card p{
     color: black;
     margin: 10px 0px !important;
 }
+
 .provider-container{
     display: flex;
     justify-content: space-between;
 }
+
 .provider-name{
     margin-left: 10px;
 }
@@ -322,56 +329,68 @@ width: 70%;
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    color: #0071bd;
+    color: var(--greenish);
 }
+
 .chart-title{
-    color: #0071bd !important;
+    color: var(--greenish) !important;
 }
+
 .price-container{
     display: flex !important;
     gap: 20px !important;
     align-items: center !important;
     flex-wrap: wrap !important;
 }
+
 .price-change{
     font-weight: 900 !important;
 }
+
 .current-price{
     margin-top: 0px !important;
     font-weight: 900 !important;
 }
+
 .home-heading-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
 }
+
 .show-more{
     margin-top: 0px !important;
 }
+
 .exchange-image{
     margin: 0px 10px !important;
 }
+
 .search-crypto{
     margin: 20px auto 30px auto;
     width: 250px;
 }
+
 .crypto-card-container{
     min-height: 65vh !important;
 }
+
 .crypto-card{
     min-width: 250px;
 }
+
 .crypto-card .crypto-image{
     width:35px;
 }
+
 .select-timeperiod{
     width: 200px !important;
     margin-top: 20px !important;
 }
 
 .footer {
-    background-color: #001529;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     padding: 20px;
