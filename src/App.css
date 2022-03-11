@@ -3,7 +3,7 @@
     --bgPrimary:#000;
    --bgSecondary: #00e4c5;
    --greenish: #00e4c5;
-   --light-blue: #e6f7ff;
+   --light-blue: #4bbef3;
    --border: #d9d9d9;
 }
 
@@ -12,13 +12,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #000;
+}
 a {
-    color: #fff !important;
+    color: var(--greenish) !important; 
 }
 a:hover{
-    color: var(--greenish) !important;
+    color: var(--light-blue) !important;
 }
-
+.ant-menu-item-selected {
+    background-color: #000 !important;
+  }
 .app{
     display: flex;
     overflow: hidden;
@@ -28,7 +33,6 @@ a:hover{
     flex: 0.2;
     background-color: #000;
 }
-
 .main{
     flex: 0.8;
     width: 100%;
@@ -40,15 +44,21 @@ a:hover{
 
 .nav-container{
     position: fixed;
+    justify-content: center;
+    align-items: center;
     left: 0px;
     margin: 0px;
     height: 100vh;
     width: 240px;
     background-color:#000;
 }
-
+.nav-container a {
+    color:#fff !important;
+}
 .logo-container{
     display: flex;
+    justify-content: center;
+    text-align: center;
     background-color: #000;
     padding: 20px;
     align-items: center;
@@ -56,14 +66,19 @@ a:hover{
 }
 
 .logo a{
-   color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--greenish) !important;
+    padding: 10px;
+    align-items: center;
 }
 
 .menu-control-container{
     display: none !important;
     position: absolute !important;
     right: 20px !important;
-    top: 30px !important;
+    top: 38px !important;
     font-size: 1.2rem;
     background-color: var(--bgSecondary) !important;
     border: none;
@@ -126,6 +141,7 @@ a:hover{
     .ant-menu{
         position: absolute;
         right: 0px;
+        padding: 20px px 30px 5px !important;
     }
     .home-title{
         font-size: 1.4rem !important;

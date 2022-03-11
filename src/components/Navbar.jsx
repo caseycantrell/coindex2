@@ -27,7 +27,6 @@ const Navbar = () => {
   return (
     <div className="nav-container">
         <div className="logo-container">
-            <Avatar src={icon} size="large" />
             <Typography.Title level={2} className="logo">
                 <Link style={{ color: "#fff" }} to="/">COINdex</Link>
             </Typography.Title>
@@ -36,14 +35,14 @@ const Navbar = () => {
             </Button>
         </div>
         {activeMenu && (
-            <Menu style={{ backgroundColor: "#000" }}>
-                <Menu.Item style={{ fontSize: "18px", border: "none" }} icon={<HomeOutlined />} key={1}>
+            <Menu style={{ backgroundColor: "#000", border: "none" }}>
+                <Menu.Item style={{ fontSize: "20px" }} icon={<HomeOutlined />} key={1}>
                     <Link to="/">Home</Link>
                 </Menu.Item>
-                <Menu.Item style={{ fontSize: "18px", border: "none"  }} icon={<FundOutlined />} key={2}>
+                <Menu.Item style={{ fontSize: "20px" }} icon={<FundOutlined />} key={2}>
                     <Link to="/cryptocurrencies">Cryptocurrencies</Link>
                 </Menu.Item>
-                <Menu.Item style={{ fontSize: "18px", border: "none"  }} icon={<BulbOutlined />} key={4}>
+                <Menu.Item style={{ fontSize: "20px" }} icon={<BulbOutlined />} key={4}>
                     <Link to="/news">News</Link>
                 </Menu.Item>
             </Menu>
