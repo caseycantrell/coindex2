@@ -1,6 +1,10 @@
 # Welcome to COINdex, an application to look at info, news, and statistics of popular Cryptocurrencies.
 
+---
 
+![coindex](https://github.com/caseycantrell/coindex2/blob/main/public/coindex2.jpg)
+
+---
 
 Check out the deployed version [here](https://coindex2.netlify.app).
 
