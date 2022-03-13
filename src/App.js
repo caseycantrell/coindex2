@@ -30,9 +30,8 @@ function App() {
             </div>
           </Layout>
         <div className="footer">
-          <Title level={5} style={{ color: "white", textAlign: "center" }}>
-            COINdex <br />
-            All rights reserved
+          <Title level={3} style={{ color: "white", textAlign: "center" }}>
+            COINdex
           </Title>
           <Space>
             <Link to="/">Home</Link>

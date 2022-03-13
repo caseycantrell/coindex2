@@ -28,7 +28,12 @@ a:hover{
 .ant-menu-item-selected {
     background-color: #000 !important;
   }
-
+.ant-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    padding-left: 35px !important;
+}
 .app{
     display: flex;
     overflow: hidden;
@@ -55,7 +60,7 @@ a:hover{
     left: 0px;
     margin: 0px;
     height: 100vh;
-    width: 240px;
+    width: 260px;
     background-color:#000;
 }
 
@@ -66,10 +71,10 @@ a:hover{
 .logo-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: #000;
-    padding: 20px;
-    align-items: center;
+    padding: 30px;
     width: 100%;
 }
 
@@ -86,7 +91,7 @@ a:hover{
     display: none !important;
     position: absolute !important;
     right: 20px !important;
-    top: 38px !important;
+    top: 48px !important;
     font-size: 1.2rem;
     background-color: var(--bgSecondary) !important;
     border: none;
