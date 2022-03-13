@@ -149,7 +149,7 @@ a:hover{
     .ant-menu{
         position: absolute;
         right: 0px;
-        padding: 20px px 30px 5px !important;
+        padding: 20px 15px 30px 5px !important;
     }
     .home-title{
         font-size: 1.4rem !important;
