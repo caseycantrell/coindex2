@@ -1,4 +1,4 @@
-# Welcome to COINdex, an application to look at info, news, and statistics of popular Cryptocurrencies.
+# COINdex is an application to look at info, news, and statistics of popular Cryptocurrencies.
 
 ---
 
